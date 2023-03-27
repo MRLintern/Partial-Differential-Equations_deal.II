@@ -17,7 +17,7 @@ deal.II is a free, open-source library to solve partial differential equations u
 [Download](https://www.dealii.org/download.html) the library and go to the current release box.
 Now follow the instructions:
 
-        $ tar dealii-9.4.1.tar.gz
+        $ tar -xvf dealii-9.4.1.tar.gz
         $ mv dealii-9.4.1 /to-your-desired-location
         $ cd dealii-9.4.1
         $ cmake .
