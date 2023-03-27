@@ -10,6 +10,14 @@ deal.II is a free, open-source library to solve partial differential equations u
 2. OS: `Ubuntu 20.04`
 3. `CMake`
 4. Text editor: Any will do. `Sublime Text` was used
+5. Image viewer for results. Some will be `.eps` or `.svg` image files. For `.eps` files use the document viewer `evince`. For the `.svg` files, use    `inkview`.
 
 ## Instalation & Configuration
 
+[Download](https://www.dealii.org/download.html) the library and go to the current release box.
+Now follow the instructions:
+
+        $ tar dealii-9.4.1.tar.gz
+        $ mv dealii-9.4.1 /to-your-desired-location
+        $ cd dealii-9.4.1
+        $ cmake .
