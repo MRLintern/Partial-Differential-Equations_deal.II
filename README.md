@@ -21,3 +21,14 @@ Now follow the instructions:
         $ mv dealii-9.4.1 /to-your-desired-location
         $ cd dealii-9.4.1
         $ cmake .
+        $ make
+       
+       
+Now the library has been installed and configured, make a program which will create two different grid/mesh configurations.
+
+        $ mkdir grid_test && cd grid_test
+        $ touch CMakeLists.txt grid.cpp
+        $ mkdir build && cd build
+        $ cmake ..
+        $ cmake --build .
+        $ ./grid
