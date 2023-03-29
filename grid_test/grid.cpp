@@ -99,7 +99,7 @@ void second_grid() {
 
 }
 
-////call functions to make the meshes
+//call functions to make the meshes
 int main() {
 
 	first_grid();
