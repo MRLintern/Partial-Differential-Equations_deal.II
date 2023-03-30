@@ -1,9 +1,4 @@
 ## Results
 
-Contains images of 2 different grid configurations.
+Contains images of 2 different grid configurations. The program generates 2 `eps` image files which aren't the best to work with. Converted these to `png` files via an online [app](https://cloudconvert.com/eps-to-png).
 
-You wont be able to view these as they'll be in data format so use the document viewer `evince`.
-
-
-          $ evince grid-1.eps
-          $ evince grid-2.eps
