@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The Elasticity Equation is a set of equations used to model Elasticity, the property of Solid Materials to return to their original shape and size after the Forces Deforming them have been removed.
+The Elasticity Equation is a set of equations used to model Elasticity, the property of Solid Materials to return to their original shape and size after the Forces Deforming them have been removed. Note: images have been included from initial run of the program
 
 ## Requirements
 
