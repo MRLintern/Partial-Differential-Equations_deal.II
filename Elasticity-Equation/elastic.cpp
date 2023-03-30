@@ -35,19 +35,13 @@
 #include <fstream>
 #include <iostream>
 
-// The last step is as in previous programs. In particular, just like in
-// step-7, we pack everything that's specific to this program into a namespace
+//pack everything that's specific to this program into a namespace
 // of its own.
 namespace Step8
 {
   using namespace dealii;
 
-  // @sect3{The <code>ElasticProblem</code> class template}
-
-  // The main class is, except for its name, almost unchanged with respect to
-  // the step-6 example.
-  //
-  // The only change is the use of a different class for the <code>fe</code>
+  // <code>fe</code>
   // variable: Instead of a concrete finite element class such as
   // <code>FE_Q</code>, we now use a more generic one,
   // <code>FESystem</code>. In fact, <code>FESystem</code> is not really a
@@ -84,9 +78,6 @@ namespace Step8
     Vector<double> solution;
     Vector<double> system_rhs;
   };
-
-
-  // @sect3{Right hand side values}
 
   // Before going over to the implementation of the main class, we declare and
   // define the function which describes the right hand side. This time, the
@@ -152,13 +143,7 @@ namespace Step8
           values[point_n][1] = 0.0;
       }
   }
-
-
-
-  // @sect3{The <code>ElasticProblem</code> class implementation}
-
-  // @sect4{ElasticProblem::ElasticProblem}
-
+  
   // Following is the constructor of the main class. As said before, we would
   // like to construct a vector-valued finite element that is composed of
   // several scalar finite elements (i.e., we want to build the vector-valued
@@ -179,11 +164,7 @@ namespace Step8
   // which can perform more complex operations than just stacking together
   // several scalar finite elements of the same type into one; we will get to
   // know these possibilities in later examples.
-
-
-
-  // @sect4{ElasticProblem::~ElasticProblem}
-
+  
   // The destructor, on the other hand, is exactly as in step-6:
   template <int dim>
   ElasticProblem<dim>::~ElasticProblem()
@@ -191,8 +172,6 @@ namespace Step8
     dof_handler.clear();
   }
 
-
-  // @sect4{ElasticProblem::setup_system}
 
   // Setting up the system of equations is identical to the function used in
   // the step-6 example. The <code>DoFHandler</code> class and all other
@@ -225,9 +204,6 @@ namespace Step8
     solution.reinit(dof_handler.n_dofs());
     system_rhs.reinit(dof_handler.n_dofs());
   }
-
-
-  // @sect4{ElasticProblem::assemble_system}
 
   // The big changes in this program are in the creation of matrix and right
   // hand side, since they are problem-dependent. We will go through that
@@ -262,7 +238,7 @@ namespace Step8
 
     std::vector<types::global_dof_index> local_dof_indices(dofs_per_cell);
 
-    // As was shown in previous examples as well, we need a place where to
+    // need a place where to
     // store the values of the coefficients at all the quadrature points on a
     // cell. In the present situation, we have two coefficients, lambda and
     // mu.
@@ -448,9 +424,6 @@ namespace Step8
     hanging_node_constraints.distribute(solution);
   }
 
-
-  // @sect4{ElasticProblem::refine_grid}
-
   // The function that does the refinement of the grid is the same as in the
   // step-6 example. The quadrature formula is adapted to the linear elements
   // again. Note that the error estimator by default adds up the estimated
@@ -480,9 +453,6 @@ namespace Step8
 
     triangulation.execute_coarsening_and_refinement();
   }
-
-
-  // @sect4{ElasticProblem::output_results}
 
   // The output happens mostly as has been shown in previous examples
   // already. The only difference is that the solution function is vector
@@ -549,9 +519,6 @@ namespace Step8
     data_out.write_vtk(output);
   }
 
-
-
-  // @sect4{ElasticProblem::run}
 
   // The <code>run</code> function does the same things as in step-6, for
   // example. This time, we use the square [-1,1]^d as domain, and we refine
