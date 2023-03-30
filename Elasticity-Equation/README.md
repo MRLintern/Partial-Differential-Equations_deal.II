@@ -13,3 +13,21 @@ The Elasticity Equation is a set of equations used to model Elasticity, the prop
 5. [Paravview](https://www.paraview.org/) for viewing images.
 
 ## Instructions
+
+          $ git clone https://github.com/MRLintern/Partial-Differential-Equations_deal.II.git
+          $ cd Elasticity-Equation
+          $ mkdir build && cd build
+          $ cmake ..
+          $ cmake --build .
+          $ ./elastic
+          
+          Viewing images: start Paraview:
+          
+          $ paraview &
+          
+          Go to file tab and then find your image(s) in the working directory.
+          
+          
+## Technical Background: Elasticity      
+  
+          
