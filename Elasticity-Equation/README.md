@@ -10,7 +10,7 @@ The Elasticity Equation is a set of equations used to model Elasticity, the prop
 2. OS: `Ubuntu 20.04`.
 3. `CMake`.
 4. Text Editor: Any will do; `Sublime Text` was used.
-5. [Paravview](https://www.paraview.org/) for viewing images.
+5. [ParaView](https://www.paraview.org/) for viewing images.
 
 ## Instructions
 
