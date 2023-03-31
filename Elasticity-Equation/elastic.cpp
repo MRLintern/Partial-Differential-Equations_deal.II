@@ -37,7 +37,7 @@
 
 //pack everything that's specific to this program into a namespace
 // of its own.
-namespace Step8
+namespace Elasticity
 {
   using namespace dealii;
 
@@ -587,16 +587,13 @@ namespace Step8
   }
 } // namespace Step8
 
-// @sect3{The <code>main</code> function}
-
 // After closing the <code>Step8</code> namespace in the last line above, the
-// following is the main function of the program and is again exactly like in
-// step-6 (apart from the changed class names, of course).
+// following is the main function of the program 
 int main()
 {
   try
     {
-      Step8::ElasticProblem<2> elastic_problem_2d;
+      Elasticity::ElasticProblem<2> elastic_problem_2d;
       elastic_problem_2d.run();
     }
   catch (std::exception &exc)
