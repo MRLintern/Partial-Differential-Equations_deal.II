@@ -10,7 +10,7 @@ deal.II is a free, open-source library to solve partial differential equations u
 2. OS: `Ubuntu 20.04`
 3. `CMake`
 4. Text editor: Any will do. `Sublime Text` was used
-5. Image viewer for results. Some will be `.eps` or `.svg` image files. For `.eps` files use the document viewer `evince`. For the `.svg` files, use    [inkview](https://manpages.ubuntu.com/manpages/impish/man1/inkview.1.html). ANother good option for visualising physical data is [ParaView](https://www.paraview.org/).
+5. Image viewer for results. Some will be `.eps` or `.svg` image files. For `.eps` files use the document viewer `evince`. For the `.svg` files, use    [inkview](https://manpages.ubuntu.com/manpages/impish/man1/inkview.1.html). Another good option for visualising physical data is [ParaView](https://www.paraview.org/).
 
 ## Instalation & Configuration
 
