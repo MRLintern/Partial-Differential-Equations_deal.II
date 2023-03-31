@@ -28,6 +28,8 @@ The Elasticity Equation is a set of equations used to model Elasticity, the prop
           Go to file tab and then find your image(s) in the working directory.
           
           
-## Technical Background: Elasticity      
+## Technical Background: Elasticity   
+
+Provide background to elasticity and equation(s).
   
           
